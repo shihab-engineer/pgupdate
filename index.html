@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Brand | Premium Luxury Spoons &amp; Designer Cutlery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container top-bar-content">
+      <span><i class="fa-solid fa-wand-magic-sparkles"></i> Grand Opening Special: All Designer Spoon Sets Discounted by $2.00 - $4.00!</span>
+      <div class="top-bar-contact">
+        <a href="tel:+13349982982"><i class="fa-solid fa-phone"></i> +1 334 998 2982</a>
+        <span>|</span>
+        <a href="mailto:pabelglobal@gmail.com"><i class="fa-solid fa-envelope"></i> pabelglobal@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo-box">
+        <img src="logo.svg" alt="PG Brand Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="logo-title">PG BRAND</span>
+          <span class="logo-tag">PREMIUM SPOONS &amp; CUTLERY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#spotlight" class="nav-link">Signature Set</a>
+        <a href="#about" class="nav-link">About PG</a>
+        <a href="#products" class="nav-link">Spoon Store</a>
+        <a href="#gallery" class="nav-link">Full Gallery</a>
+        <a href="#contact" class="nav-link">Location &amp; Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="cart-trigger" id="cartToggle" title="View Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </div>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-glow-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <i class="fa-solid fa-crown"></i> 100% Genuine Craftsmanship
+        </div>
+        <h1 class="hero-title">
+          Redefine Royal Dining With <span class="highlight">PG Designer Spoons</span>
+        </h1>
+        <p class="hero-desc">
+          Welcome to PG Brand by Pabel Global Trade Solutions. We specialize in masterfully crafted porcelain-handle dining spoons, 24K electroplated gold cutlery stands, food-grade stainless steel revolving sets, and heat-resistant culinary utensils designed for luxury homes and elite dining.
+        </p>
+        
+        <div class="hero-usps">
+          <div class="usp-item">
+            <i class="fa-solid fa-medal"></i>
+            <div>
+              <strong>SUS 304/316 Grade</strong>
+              <small>Rust-Proof &amp; Food Safe</small>
+            </div>
+          </div>
+          <div class="usp-item">
+            <i class="fa-solid fa-shield-heart"></i>
+            <div>
+              <strong>Ceramic &amp; PVD Finish</strong>
+              <small>Zero Peeling or Fading</small>
+            </div>
+          </div>
+          <div class="usp-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+              <strong>Wholesale &amp; Direct</strong>
+              <small>Affordable Luxury from $2.50</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-gold"><i class="fa-solid fa-cart-shopping"></i> Shop Spoon Sets</a>
+          <a href="#gallery" class="btn btn-glass"><i class="fa-regular fa-images"></i> Explore Gallery (10 Designs)</a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card with Real Product -->
+      <div class="hero-visual">
+        <div class="visual-card">
+          <img src="images/spoon_white_marble.jpg" alt="PG Luxury White Marble Spoon Stand Set" class="hero-img">
+          <div class="hero-float-card">
+            <div class="f-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="f-info">
+              <h4>Imperial White Marble Set</h4>
+              <p>Gold Cutlery Carousel • <strong>Only $4.50</strong> <span class="cut-price">$8.50</span></p>
+            </div>
+            <button class="btn-mini-add" onclick="addToCart('PG White Marble Gold Spoon Set', 4.50, 'images/spoon_white_marble.jpg')">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Spotlight Section (Champagne Gold Serving Collection) -->
+  <section id="spotlight" class="spotlight-section">
+    <div class="container spotlight-container">
+      <div class="spotlight-visual">
+        <div class="spotlight-glow"></div>
+        <div class="spotlight-frame">
+          <img src="images/spoon_spotlight_special.jpg" alt="PG Champagne Gold Signature Serving Collection" class="spotlight-img">
+          <div class="spotlight-corner tl"></div>
+          <div class="spotlight-corner tr"></div>
+          <div class="spotlight-corner bl"></div>
+          <div class="spotlight-corner br"></div>
+        </div>
+        <div class="spotlight-price-tag">
+          <span class="tag-label">Limited Edition</span>
+          <span class="tag-price">$5.50</span>
+        </div>
+      </div>
+
+      <div class="spotlight-content">
+        <div class="badge-pill dark-pill">
+          <i class="fa-solid fa-star"></i> New Signature Arrival
+        </div>
+        <h2 class="spotlight-title">The <span class="highlight-navy">Champagne Gold</span> Serving Collection</h2>
+        <p class="spotlight-desc">
+          A hand-finished trio of serving pieces in a warm champagne-gold sheen — a rounded sauce ladle, a deep serving spoon, and a ribbed rice paddle. Cast for effortless plating and designed to be the centerpiece of your table, not just a tool on it.
+        </p>
+
+        <ul class="spotlight-features">
+          <li><i class="fa-solid fa-check"></i> Mirror-polished champagne-gold finish</li>
+          <li><i class="fa-solid fa-check"></i> Ergonomic curved handles for a secure grip</li>
+          <li><i class="fa-solid fa-check"></i> Food-safe stainless core, tarnish resistant</li>
+          <li><i class="fa-solid fa-check"></i> Sold as a complete 3-piece serving set</li>
+        </ul>
+
+        <div class="spotlight-cta">
+          <button class="btn btn-gold" onclick="addToCart('PG Champagne Gold Signature Serving Set', 5.50, 'images/spoon_spotlight_special.jpg')">
+            <i class="fa-solid fa-cart-shopping"></i> Add Signature Set — $5.50
+          </button>
+          <a href="#gallery" class="btn btn-outline-navy">View More Designs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-box">
+          <img src="images/spoon_hammered_stand.jpg" alt="Handcrafted PG Spoon Set" class="about-main-img">
+          <div class="about-badge-card">
+            <img src="logo.svg" alt="PG Crest" class="about-crest">
+            <div>
+              <h5>PG BRAND CERTIFIED</h5>
+              <small>Exquisite Hospitality Cutlery</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-box">
+          <span class="section-tag">About PG Brand</span>
+          <h2 class="section-title">Pabel Global Trade Solutions</h2>
+          <p class="about-lead">
+            PG Brand is an international dining and trade solutions venture founded to bring regal dining aesthetics within practical everyday reach.
+          </p>
+          <p>
+            We curate and manufacture specialized spoons and tableware suites ranging from fine marbleized ceramic handles and 24K mirror-polished titanium electroplating to high-durability kitchen prep ladles. Every spoon is balanced for optimal grip comfort, polished with scratch-resistant coatings, and designed to elevate home and restaurant ambiance.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="h-card">
+              <i class="fa-solid fa-gem"></i>
+              <h4>Artisanal Balance</h4>
+              <p>Weighted ergonomic handles for natural dining grace.</p>
+            </div>
+            <div class="h-card">
+              <i class="fa-solid fa-tags"></i>
+              <h4>Honest Direct Pricing</h4>
+              <p>Special factory-direct pricing reduced by $2.00 to $4.00 per unit.</p>
+            </div>
+            <div class="h-card">
+              <i class="fa-solid fa-earth-americas"></i>
+              <h4>Global Distribution</h4>
+              <p>Supplying North America and international wholesale networks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Featured Product Cards (1st 5 Uploaded Spoon Pictures) -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Featured Store Collections</span>
+        <h2 class="section-title">Shop Our Top 5 PG Spoon Sets</h2>
+        <p class="section-subtitle">Real customer favorites featuring porcelain marble accents, gold electroplate, stainless stands, and chef essentials.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1: White Marble Spoon Stand Set -->
+        <div class="product-card">
+          <div class="card-thumb">
+            <span class="badge-chip top-pick">#1 Bestseller</span>
+            <span class="discount-chip save-tag"><i class="fa-solid fa-arrow-down"></i> Save $4.00</span>
+            <img src="images/spoon_white_marble.jpg" alt="PG White Marble Handle Gold Spoon Stand Set">
+            <button class="quick-add-btn" onclick="addToCart('PG White Marble Gold Spoon Set', 4.50, 'images/spoon_white_marble.jpg')">
+              <i class="fa-solid fa-cart-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-content">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="rating-num">(5.0 • 148 reviews)</span>
+            </div>
+            <h3 class="product-name">PG White Marble Handle Gold Spoon Stand Set</h3>
+            <p class="product-brief">24-piece royal gold dining spoons, forks, and knives with white marble ceramic handles &amp; display rack.</p>
+            
+            <div class="price-container">
+              <div class="prices">
+                <span class="price-current">$4.50</span>
+                <span class="price-original">$8.50</span>
+              </div>
+              <span class="stock-status in-stock"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+            </div>
+
+            <button class="btn btn-add-cart" onclick="addToCart('PG White Marble Gold Spoon Set', 4.50, 'images/spoon_white_marble.jpg')">
+              <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Emerald Green Marble Spoon Stand Set -->
+        <div class="product-card">
+          <div class="card-thumb">
+            <span class="badge-chip royal-pick">Royal Emerald</span>
+            <span class="discount-chip save-tag"><i class="fa-solid fa-arrow-down"></i> Save $3.50</span>
+            <img src="images/spoon_green_marble.jpg" alt="PG Emerald Green Marble Gold Spoon Stand Set">
+            <button class="quick-add-btn" onclick="addToCart('PG Emerald Green Gold Spoon Set', 4.00, 'images/spoon_green_marble.jpg')">
+              <i class="fa-solid fa-cart-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-content">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              <span class="rating-num">(4.9 • 112 reviews)</span>
+            </div>
+            <h3 class="product-name">PG Emerald Green Marble Gold Cutlery Set</h3>
+            <p class="product-brief">Lustrous deep emerald green ceramic handles paired with 24K mirror-gold electroplate and golden hanger.</p>
+            
+            <div class="price-container">
+              <div class="prices">
+                <span class="price-current">$4.00</span>
+                <span class="price-original">$7.50</span>
+              </div>
+              <span class="stock-status in-stock"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+            </div>
+
+            <button class="btn btn-add-cart" onclick="addToCart('PG Emerald Green Gold Spoon Set', 4.00, 'images/spoon_green_marble.jpg')">
+              <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Sleek Mirror Gold 4-Piece Cutlery Set -->
+        <div class="product-card">
+          <div class="card-thumb">
+            <span class="badge-chip trending-pick">Modern Luxury</span>
+            <span class="discount-chip save-tag"><i class="fa-solid fa-arrow-down"></i> Save $2.50</span>
+            <img src="images/spoon_gold_cutlery.jpg" alt="PG Sleek Mirror Gold Spoon Set">
+            <button class="quick-add-btn" onclick="addToCart('PG Sleek Mirror Gold 4-Piece Set', 3.00, 'images/spoon_gold_cutlery.jpg')">
+              <i class="fa-solid fa-cart-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-content">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="rating-num">(4.9 • 87 reviews)</span>
+            </div>
+            <h3 class="product-name">PG Sleek Mirror Gold 4-Piece Cutlery Suite</h3>
+            <p class="product-brief">Solid stainless steel dinner spoon, tea spoon, fork &amp; knife in flawless high-gloss reflective gold.</p>
+            
+            <div class="price-container">
+              <div class="prices">
+                <span class="price-current">$3.00</span>
+                <span class="price-original">$5.50</span>
+              </div>
+              <span class="stock-status in-stock"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+            </div>
+
+            <button class="btn btn-add-cart" onclick="addToCart('PG Sleek Mirror Gold 4-Piece Set', 3.00, 'images/spoon_gold_cutlery.jpg')">
+              <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: Revolving Carousel Stainless Steel Spoon Stand Set -->
+        <div class="product-card">
+          <div class="card-thumb">
+            <span class="badge-chip classic-pick">Restaurant Grade</span>
+            <span class="discount-chip save-tag"><i class="fa-solid fa-arrow-down"></i> Save $3.00</span>
+            <img src="images/spoon_steel_carousel.jpg" alt="PG Revolving Carousel Stainless Spoon Stand">
+            <button class="quick-add-btn" onclick="addToCart('PG Carousel Stainless Spoon Set', 3.50, 'images/spoon_steel_carousel.jpg')">
+              <i class="fa-solid fa-cart-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-content">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              <span class="rating-num">(4.8 • 95 reviews)</span>
+            </div>
+            <h3 class="product-name">PG Revolving Carousel Stainless Spoon Stand</h3>
+            <p class="product-brief">Rotating 360-degree centerpiece stand with laser-engraved feather pattern stainless spoons &amp; dessert forks.</p>
+            
+            <div class="price-container">
+              <div class="prices">
+                <span class="price-current">$3.50</span>
+                <span class="price-original">$6.50</span>
+              </div>
+              <span class="stock-status in-stock"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+            </div>
+
+            <button class="btn btn-add-cart" onclick="addToCart('PG Carousel Stainless Spoon Set', 3.50, 'images/spoon_steel_carousel.jpg')">
+              <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5: Red Silicone &amp; Wood Kitchen Cooking Spoon Set -->
+        <div class="product-card">
+          <div class="card-thumb">
+            <span class="badge-chip chef-pick">Chef Essential</span>
+            <span class="discount-chip save-tag"><i class="fa-solid fa-arrow-down"></i> Save $2.00</span>
+            <img src="images/spoon_red_silicone.jpg" alt="PG Crimson Silicone &amp; Wood Cooking Spoon Set">
+            <button class="quick-add-btn" onclick="addToCart('PG Crimson Silicone Cooking Spoon Set', 2.50, 'images/spoon_red_silicone.jpg')">
+              <i class="fa-solid fa-cart-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-content">
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="rating-num">(5.0 • 160 reviews)</span>
+            </div>
+            <h3 class="product-name">PG Crimson Silicone &amp; Wood Cooking Spoon Suite</h3>
+            <p class="product-brief">Heat-resistant silicone soup ladles, slotted serving spoons, pasta claws &amp; spatulas with natural beechwood handles.</p>
+            
+            <div class="price-container">
+              <div class="prices">
+                <span class="price-current">$2.50</span>
+                <span class="price-original">$4.50</span>
+              </div>
+              <span class="stock-status in-stock"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+            </div>
+
+            <button class="btn btn-add-cart" onclick="addToCart('PG Crimson Silicone Cooking Spoon Set', 2.50, 'images/spoon_red_silicone.jpg')">
+              <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Spoon Gallery (All 10 Real Spoon Pictures) -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Visual Masterpieces</span>
+        <h2 class="section-title">PG Complete Spoon Gallery</h2>
+        <p class="section-subtitle">Examine all 10 specialized designs—from royal stands to antique brass sugar scoops and buffet serving ladles.</p>
+      </div>
+
+      <!-- Gallery Filter Chips -->
+      <div class="gallery-nav">
+        <button class="g-btn active" data-filter="all">All Spoon Designs (10)</button>
+        <button class="g-btn" data-filter="stand">Stand Sets</button>
+        <button class="g-btn" data-filter="dining">Dinner &amp; Flatware</button>
+        <button class="g-btn" data-filter="kitchen">Kitchen &amp; Serving</button>
+        <button class="g-btn" data-filter="vintage">Vintage &amp; Antique</button>
+      </div>
+
+      <!-- 10 Gallery Items -->
+      <div class="gallery-grid">
+        
+        <!-- 1 -->
+        <div class="g-card" data-cat="stand">
+          <div class="g-img-wrap">
+            <img src="images/spoon_white_marble.jpg" alt="White Marble Spoon Stand">
+            <div class="g-overlay">
+              <span class="g-tag">Stand Set</span>
+              <h4>White Marble Gold Stand</h4>
+              <p>Ceramic handles with hanging golden arch</p>
+              <button class="btn-g-add" onclick="addToCart('PG White Marble Gold Spoon Set', 4.50, 'images/spoon_white_marble.jpg')">Add ($4.50)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="g-card" data-cat="stand">
+          <div class="g-img-wrap">
+            <img src="images/spoon_green_marble.jpg" alt="Emerald Marble Spoon Stand">
+            <div class="g-overlay">
+              <span class="g-tag">Stand Set</span>
+              <h4>Emerald Green Gold Set</h4>
+              <p>Dimensions &amp; sizes: 20cm, 19cm, 15cm</p>
+              <button class="btn-g-add" onclick="addToCart('PG Emerald Green Gold Spoon Set', 4.00, 'images/spoon_green_marble.jpg')">Add ($4.00)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="g-card" data-cat="dining">
+          <div class="g-img-wrap">
+            <img src="images/spoon_gold_cutlery.jpg" alt="Mirror Gold 4-Piece Flatware">
+            <div class="g-overlay">
+              <span class="g-tag">Dining Set</span>
+              <h4>Sleek Mirror Gold Cutlery</h4>
+              <p>Tablescape essential with dinner &amp; tea spoon</p>
+              <button class="btn-g-add" onclick="addToCart('PG Sleek Mirror Gold 4-Piece Set', 3.00, 'images/spoon_gold_cutlery.jpg')">Add ($3.00)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="g-card" data-cat="stand">
+          <div class="g-img-wrap">
+            <img src="images/spoon_steel_carousel.jpg" alt="Carousel Spoon Stand">
+            <div class="g-overlay">
+              <span class="g-tag">Stand Set</span>
+              <h4>360° Revolving Stainless Set</h4>
+              <p>Laser engraved handles with revolving top</p>
+              <button class="btn-g-add" onclick="addToCart('PG Carousel Stainless Spoon Set', 3.50, 'images/spoon_steel_carousel.jpg')">Add ($3.50)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="g-card" data-cat="kitchen">
+          <div class="g-img-wrap">
+            <img src="images/spoon_red_silicone.jpg" alt="Silicone Cooking Spoon Set">
+            <div class="g-overlay">
+              <span class="g-tag">Kitchen Prep</span>
+              <h4>Silicone &amp; Beechwood Spoons</h4>
+              <p>Heat-resistant cooking ladles &amp; spatulas</p>
+              <button class="btn-g-add" onclick="addToCart('PG Crimson Silicone Cooking Spoon Set', 2.50, 'images/spoon_red_silicone.jpg')">Add ($2.50)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="g-card" data-cat="dining">
+          <div class="g-img-wrap">
+            <img src="images/spoon_matte_gold.jpg" alt="Satin Matte Gold Soup Spoons">
+            <div class="g-overlay">
+              <span class="g-tag">Dining Set</span>
+              <h4>Satin Matte Gold Soup Spoons</h4>
+              <p>Wide oval bowl with anti-glare matte brass finish</p>
+              <button class="btn-g-add" onclick="addToCart('PG Satin Matte Gold Soup Spoons', 2.50, 'images/spoon_matte_gold.jpg')">Add ($2.50)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="g-card" data-cat="stand">
+          <div class="g-img-wrap">
+            <img src="images/spoon_hammered_stand.jpg" alt="Hammered Two Tone Cutlery Stand">
+            <div class="g-overlay">
+              <span class="g-tag">Stand Set</span>
+              <h4>Two-Tone Hammered Cutlery Stand</h4>
+              <p>Textured gold &amp; silver grip with arched golden rack</p>
+              <button class="btn-g-add" onclick="addToCart('PG Two-Tone Hammered Spoon Set', 4.00, 'images/spoon_hammered_stand.jpg')">Add ($4.00)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="g-card" data-cat="vintage">
+          <div class="g-img-wrap">
+            <img src="images/spoon_antique_scoop.jpg" alt="Antique Brass Scoop Spoons">
+            <div class="g-overlay">
+              <span class="g-tag">Vintage</span>
+              <h4>Antique Carved Brass Scoop Spoons</h4>
+              <p>Filigree floral handle tea &amp; spice scoop spoons</p>
+              <button class="btn-g-add" onclick="addToCart('PG Antique Carved Brass Scoop Spoon', 2.00, 'images/spoon_antique_scoop.jpg')">Add ($2.00)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="g-card" data-cat="kitchen">
+          <div class="g-img-wrap">
+            <img src="images/spoon_buffet_serving.jpg" alt="Buffet Serving Spoons">
+            <div class="g-overlay">
+              <span class="g-tag">Buffet &amp; Serving</span>
+              <h4>Perforated &amp; Solid Serving Spoons</h4>
+              <p>Large banquet spoons in mirror gold &amp; silver</p>
+              <button class="btn-g-add" onclick="addToCart('PG Banquet Serving Spoon Set', 3.50, 'images/spoon_buffet_serving.jpg')">Add ($3.50)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="g-card" data-cat="kitchen">
+          <div class="g-img-wrap">
+            <img src="images/spoon_royal_ladle.jpg" alt="Royal Brass Gold Kitchen Ladle Spoons">
+            <div class="g-overlay">
+              <span class="g-tag">Kitchen Prep</span>
+              <h4>Royal Gold Kitchen Cooking Ladles</h4>
+              <p>Spaghetti claw, soup ladle, skimmer &amp; rice spoons</p>
+              <button class="btn-g-add" onclick="addToCart('PG Royal Kitchen Ladle Set', 4.00, 'images/spoon_royal_ladle.jpg')">Add ($4.00)</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact &amp; Google Maps Section with Watermarked PG Logo -->
+  <section id="contact" class="contact-section">
+    <!-- Semi-transparent PG Logo Watermark in background -->
+    <div class="watermark-logo-bg"></div>
+
+    <div class="container contact-container">
+      <div class="section-header text-center text-white">
+        <span class="section-tag gold-tag">PG Corporate Presence</span>
+        <h2 class="section-title text-white">Contact &amp; Global Location</h2>
+        <p class="section-subtitle light-text">Connect with PG Brand for bulk container shipments, custom branding, and direct retail supplies.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-card">
+          <div class="c-header">
+            <h3>Pabel Global Trade Solutions</h3>
+            <p>Direct contact desk for spoon orders, quotes, and customer inquiries.</p>
+          </div>
+
+          <div class="contact-details">
+            <div class="c-row">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <small>Official Support Email</small>
+                <a href="mailto:pabelglobal@gmail.com">pabelglobal@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="c-row">
+              <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <small>Customer Care &amp; WhatsApp</small>
+                <a href="tel:+13349982982">+1 334 998 2982</a>
+              </div>
+            </div>
+
+            <div class="c-row">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <small>Registered US Address</small>
+                <span>117 S Lexington Street STE 100, Harrisonville, MO, 64701, USA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="c-social">
+            <h4>Follow PG Brand Channels</h4>
+            <div class="social-btn-row">
+              <a href="https://www.facebook.com/share/19BxsEFd5w/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/pranto31118?s=11" target="_blank" rel="noopener" aria-label="Twitter X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/pranto_pabel?igsi=dG5nZXd2c2Y0YnVp&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Google Map Embed of 117 S Lexington St, Harrisonville MO -->
+        <div class="map-card">
+          <div class="map-header">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>PG Brand Location Map (Harrisonville, MO, USA)</span>
+          </div>
+          <div class="map-frame-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=117%20S%20Lexington%20Street%20STE%20100,%20Harrisonville,%20MO%2064701&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="360" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="PG Brand Headquarters Google Map">
+            </iframe>
+          </div>
+          <div class="map-footer">
+            <i class="fa-solid fa-clock"></i> Business Hours: Monday - Friday (9:00 AM - 6:00 PM CST)
+          </div>
+        </div>
+
+        <!-- Request Spoon Catalog &amp; Quote Form -->
+        <div class="quote-form-card">
+          <h3 class="quote-title">Request Spoon Catalog &amp; Quote</h3>
+
+          <form id="quoteForm" class="quote-form">
+            <div class="form-group">
+              <label for="qName">Your Name</label>
+              <input type="text" id="qName" name="qName" class="form-input" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="qEmail">Email Address</label>
+              <input type="email" id="qEmail" name="qEmail" class="form-input" placeholder="e.g. buyer@hotelgroup.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="qModel">Spoon Model or Quantity</label>
+              <input type="text" id="qModel" name="qModel" class="form-input" placeholder="e.g. 500 pcs Imperial Gold Spoons">
+            </div>
+
+            <div class="form-group">
+              <label for="qMessage">Message / Specifications</label>
+              <textarea id="qMessage" name="qMessage" class="form-textarea" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Slide-In Shopping Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Shopping Cart (<span id="drawerCount">0</span>)</h3>
+      <button class="btn-close-cart" id="closeCart" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsList">
+      <div class="empty-cart-msg">
+        <i class="fa-solid fa-spoon"></i>
+        <p>Your spoon cart is currently empty.</p>
+        <small>Browse our 5 featured sets and add your favorites!</small>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary-line">
+        <span>Promo:</span>
+        <span class="disc-text">Grand Opening prices applied</span>
+      </div>
+      <div class="cart-total-line">
+        <span>Total Amount:</span>
+        <span id="cartTotalSum">$0.00</span>
+      </div>
+
+      <!-- Checkout Gateway Badge -->
+      <div class="llc-gateway-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Secure payment via <strong>Stripe</strong> &bull; <strong>PABEL GLOBAL LLC</strong></span>
+      </div>
+
+      <button type="button" onclick="openCheckoutModal()" class="btn btn-gold btn-block">
+        <i class="fa-solid fa-lock"></i> Proceed to Checkout
+      </button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- PABEL GLOBAL LLC Checkout Modal (redirects to Stripe) -->
+  <div class="checkout-modal-overlay" id="checkoutModal">
+    <div class="checkout-modal-card">
+      <div class="checkout-modal-header">
+        <div class="llc-header-brand">
+          <i class="fa-solid fa-building-shield"></i>
+          <div>
+            <h3>PABEL GLOBAL LLC</h3>
+            <small>Official Merchant &amp; Order Checkout</small>
+          </div>
+        </div>
+        <button type="button" class="close-modal-btn" onclick="closeCheckoutModal()" aria-label="Close checkout">&times;</button>
+      </div>
+
+      <div class="checkout-modal-body">
+        <div class="checkout-order-summary">
+          <ul class="modal-items" id="modalItems"></ul>
+          <div class="summary-row">
+            <span>Items Selected:</span>
+            <strong id="modalItemCount">0 items</strong>
+          </div>
+          <div class="summary-row total-highlight">
+            <span>Order Total:</span>
+            <strong id="modalTotalSum">$0.00 USD</strong>
+          </div>
+        </div>
+
+        <!-- Step 1: customer details -->
+        <form id="checkoutForm" onsubmit="handleLlcCheckout(event)" class="llc-checkout-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="chkName">Full Name *</label>
+              <input type="text" id="chkName" placeholder="e.g. John Doe" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="chkEmail">Email Address *</label>
+              <input type="email" id="chkEmail" placeholder="e.g. buyer@example.com" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="chkPhone">Phone / WhatsApp *</label>
+              <input type="tel" id="chkPhone" placeholder="+1 334 998 2982" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="chkCountry">Country *</label>
+              <select id="chkCountry" autocomplete="country" required>
+                <option value="US" selected>United States</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <option value="AU">Australia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="IE">Ireland</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="IT">Italy</option>
+                <option value="ES">Spain</option>
+                <option value="NL">Netherlands</option>
+                <option value="BE">Belgium</option>
+                <option value="SE">Sweden</option>
+                <option value="NO">Norway</option>
+                <option value="DK">Denmark</option>
+                <option value="CH">Switzerland</option>
+                <option value="AT">Austria</option>
+                <option value="AE">United Arab Emirates</option>
+                <option value="SA">Saudi Arabia</option>
+                <option value="QA">Qatar</option>
+                <option value="KW">Kuwait</option>
+                <option value="IN">India</option>
+                <option value="BD">Bangladesh</option>
+                <option value="SG">Singapore</option>
+                <option value="MY">Malaysia</option>
+                <option value="JP">Japan</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="chkAddress">Street Address *</label>
+            <input type="text" id="chkAddress" placeholder="House / Street / Apartment" autocomplete="address-line1" required>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="chkCity">City *</label>
+              <input type="text" id="chkCity" autocomplete="address-level2" required>
+            </div>
+            <div class="form-field">
+              <label for="chkState">State / Province</label>
+              <input type="text" id="chkState" autocomplete="address-level1">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="chkZip">ZIP / Postal Code *</label>
+            <input type="text" id="chkZip" autocomplete="postal-code" required>
+          </div>
+
+          <div class="llc-legal-notice">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Next you will enter your card details. Your order and invoice are issued by <strong>PABEL GLOBAL LLC</strong>, Harrisonville, MO, USA.</p>
+          </div>
+
+          <p class="checkout-error" id="checkoutError" role="alert"></p>
+
+          <button type="submit" id="payBtn" class="btn btn-gold btn-block" style="padding: 13px; font-size: 1rem;">
+            <i class="fa-solid fa-credit-card"></i> <span id="payBtnText">Continue to Card Payment</span>
+          </button>
+        </form>
+
+        <!-- Step 2: card payment (Stripe secure fields) -->
+        <form id="payStep" onsubmit="handlePayment(event)" class="llc-checkout-form" hidden>
+          <div class="pay-amount-banner">
+            <span>Amount to pay</span>
+            <strong id="payAmount">$0.00 USD</strong>
+          </div>
+
+          <div class="pay-brands">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+            <i class="fa-brands fa-cc-discover"></i>
+            <span>Credit &amp; Debit cards</span>
+          </div>
+
+          <div id="paymentElement" class="payment-element-box"></div>
+
+          <p class="checkout-error" id="paymentError" role="alert"></p>
+
+          <button type="submit" id="payNowBtn" class="btn btn-gold btn-block" style="padding: 13px; font-size: 1rem;">
+            <i class="fa-solid fa-lock"></i> <span id="payNowText">Pay Now</span>
+          </button>
+          <button type="button" class="link-btn" onclick="backToDetails()">&larr; Edit delivery details</button>
+          <small class="pay-secure-note"><i class="fa-solid fa-shield-halved"></i> Card details are typed into secure Stripe fields. They never touch our website or server.</small>
+        </form>
+
+        <!-- Step 3: success -->
+        <div id="paidStep" class="paid-step" hidden>
+          <i class="fa-solid fa-circle-check paid-icon"></i>
+          <h4>Payment Successful</h4>
+          <p class="paid-amount" id="paidAmount">$0.00 USD</p>
+          <p>Order reference: <strong id="paidRef"></strong></p>
+          <p class="paid-note">Thank you! We will contact you at <strong id="paidEmail"></strong> about shipping.</p>
+          <button type="button" class="btn btn-gold btn-block" onclick="closeCheckoutModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-popup" id="toast">Item added to cart!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col-left">
+        <div class="footer-logo">
+          <img src="logo.svg" alt="PG Brand Logo">
+          <span>PG BRAND</span>
+        </div>
+        <p>Pabel Global Trade Solutions — Leading manufacturer and distributor of artisanal luxury spoons, cutlery stands, and kitchen flatware.</p>
+      </div>
+      <div class="footer-col-right">
+        <p>&copy; 2026 PG Brand. All rights reserved.</p>
+        <p class="safe-tag"><i class="fa-solid fa-lock"></i> SSL Encrypted &amp; Verified Commerce</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
